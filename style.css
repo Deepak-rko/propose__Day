@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background: url('images/romantic-background.jpg') no-repeat center center/cover;
+    color: #722F37;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+
+.proposal-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.proposal-text {
+    font-size: 2rem;
+    color: #9B2242;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#yes-button {
+    background: #ff4081;
+    color: white;
+}
+
+#no-button {
+    background: #ff1744;
+    color: white;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+#thank-you-message img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+/* Falling Hearts Animation */
+.heart {
+    position: fixed;
+    top: -10px;
+    font-size: 2rem;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
